@@ -1,0 +1,90 @@
+{
+  "folders": [
+    {
+      "name": "Theatre Solution",
+      "path": "solution"
+    },
+    {
+      "name": "Presentation Workspace",
+      "path": "presentation-workspace"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.expo": true,
+      "**/codex-*.log": true,
+      "**/expo-dev*.log": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.expo": true,
+      "**/package-lock.json": true
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "API: install packages",
+        "type": "shell",
+        "command": "npm install",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/api"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "API: start dev server",
+        "type": "shell",
+        "command": "npm run dev",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/api"
+        },
+        "isBackground": true,
+        "problemMatcher": []
+      },
+      {
+        "label": "Mobile: install packages",
+        "type": "shell",
+        "command": "npm install",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/mobile"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Mobile: start Expo",
+        "type": "shell",
+        "command": "npm start",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/mobile"
+        },
+        "isBackground": true,
+        "problemMatcher": []
+      },
+      {
+        "label": "Database: seed demo user",
+        "type": "shell",
+        "command": "npm run seed:demo-user",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/api"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Database: seed movies",
+        "type": "shell",
+        "command": "npm run seed:movies",
+        "options": {
+          "cwd": "${workspaceFolder:Theatre Solution}/api"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}

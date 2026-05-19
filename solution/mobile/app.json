@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Theatre Reservations",
+    "slug": "theatre-reservations",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "theatrereservations",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
