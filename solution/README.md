@@ -61,21 +61,7 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
 Keep `SUPABASE_SERVICE_ROLE_KEY` only in the backend `.env`. Do not place it in the mobile app.
 
-To create a login you can use immediately in the app, run:
-
-```bash
-cd api
-npm run seed:demo-user
-```
-
-Default demo credentials:
-
-```text
-Email: demo@example.com
-Password: password123
-```
-
-You can override these with `DEMO_USER_EMAIL`, `DEMO_USER_PASSWORD`, and `DEMO_USER_NAME`.
+Users can create their own account through the app registration screen and then log in with their own email and password.
 
 To add the real movie listings used by the demo app, run this after the SQL schema exists:
 
