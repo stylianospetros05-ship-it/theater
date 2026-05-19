@@ -2,6 +2,12 @@
 
 React Native + Expo Go mobile app and a Node.js/Express REST API backed by Supabase.
 
+## GitHub Repository
+
+The complete project is available on GitHub:
+
+[https://github.com/stylianospetros05-ship-it/theater](https://github.com/stylianospetros05-ship-it/theater)
+
 ## What It Includes
 
 - Email/password registration and login through Supabase Auth.
